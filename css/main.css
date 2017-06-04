@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding:0;
+	//border:2px white solid;
 }
 html{
 	margin:0;
@@ -19,6 +20,7 @@ body{
 	margin:0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .gallery{
 	margin-left: auto;
@@ -88,23 +90,30 @@ body{
 	flex-shrink: 1;
 	margin-left: 20px;
 	margin-bottom: 15px;
+	position: relative;
+	border: 3px -webkit-linear-gradient(bottom, red, blue) solid;
 }
 header{
 	display: flex;
-	justify-content: center;
 	flex-grow: 1;
+	justify-content: center;
 	margin-bottom: 20px;
 	padding-bottom: 5px;
-	border-bottom: 4px solid #777;
+	border-bottom: 4px solid #aaa;
 }
 .logo{
 	color:white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	font-size: 2rem;
 }
 .show{
 	position: initial;
 	justify-content: center;
 	text-align: center;
+	width: 85% !important;
+	height: 85% !important;
 	z-index: 2000;
 }
 a{
@@ -122,4 +131,35 @@ a:visited{
 a:active{
 	text-decoration: none;
 	color:white;
+}
+
+.image{
+	//border-radius: 2%;
+	margin:0;
+	padding: 0;
+
+}
+.contact_link{
+	color: white;
+	font-size: 1.8rem;
+	margin-right: 10px;
+}
+.galleryX{
+	width: 100%;
+	
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+}
+.gitem{
+	width: 20%;
+
+	height: auto;
+	overflow: hidden;
+	padding: 8px;
+}
+.gitem img{
+	width: 100%;
+	height: auto;
 }

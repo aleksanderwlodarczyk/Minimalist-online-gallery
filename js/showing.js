@@ -1,22 +1,35 @@
 $(document).ready(function(){
 	console.log("got it!");
 
-	$(".image").on("click", function() {
-		var browser_width = $(window).width();
-		var browser_height = $(window).height();
+	var clicked = false;
 
-		if($(this).width() < (browser_width - 100))
-		{
-			$(this).width(browser_width-100);
-			$(this).height(browser_height-100);
-			$(this).addClass("show");
+	$(".image").mouseenter(function(){
+		//$(this).width($(this).width()+10);
+		//$(this).height($(this).height()+5);
+		//$(this).css("border-radius", "15%");
+		$(this).css("box-shadow", "0 0 0 5px rgba(255,255,255, 0.6)");
 
-			$('html, body').animate({scrollTop: ($(this).offset().top-50)},550);
-		}
-		else{
-			$(this).width(480);
-			$(this).height(320);	
-			$(this).removeClass("show");
-		}
 	});
+
+	$(".image").mouseleave(function(){
+		//$(this).width($(this).width()-10);
+		//$(this).height($(this).height()-5);
+		//$(this).css("border-radius", "0%");
+		$(this).css("box-shadow", "0px 0px 0px rgba(255,255,255, 0.4)");
+	});
+
+	$(".gitem").on("click", function(){
+		if(!clicked){
+			$(this).addClass("show");
+			$('html, body').animate({scrollTop: ($(this).offset().top-20)},550);
+			clicked = true;
+		}
+		else {
+			$(this).removeClass("show");
+			clicked = false;
+		}
+
+		
+	});
+
 });
