@@ -13,6 +13,8 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Oswald', sans-serif;
+	overflow-x: hidden;
+	color: white;
 }
 .container{
 	width:100%;
@@ -21,6 +23,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 }
 .gallery{
 	margin-left: auto;
@@ -72,7 +75,7 @@ body{
 .window:nth-child(3){
 	background: #fff url("http://c1.staticflickr.com/3/2946/33810861431_de8a678ca3_k.jpg") no-repeat center center fixed;
 	top: 200%;
-	
+
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -139,17 +142,15 @@ a:active{
 	padding: 0;
 
 }
-.contact_link{
+.menu_link{
 	color: white;
 	font-size: 1.8rem;
 	margin-right: 10px;
 }
 .galleryX{
 	width: 100%;
-	
 	display: flex;
 	flex-wrap: wrap;
-
 	justify-content: center;
 }
 .gitem{
@@ -162,4 +163,47 @@ a:active{
 .gitem img{
 	width: 100%;
 	height: auto;
+}
+.side_menu{
+	color:white;
+	position: absolute;
+	display: block;
+	right: -300px;
+	margin-left: 47%;
+	transition: .5s;
+}
+.side_menuA{
+	right: 0 !important;
+}
+.side_menu ul{
+	list-style-type: none;
+	font-size: 1.7rem;
+}
+.side_menu ul li{
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.contactX{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.contact_form{
+	margin-left: 3%;
+	width:35%;
+}
+.contact_form input, textarea, button{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.05rem;
+	width:100%;
+	border-radius: 10px; 
+}
+footer{
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	padding-top: 5%;
+	position: absolute;
+	top: 85%;
 }
