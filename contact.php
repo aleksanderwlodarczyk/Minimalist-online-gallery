@@ -16,20 +16,20 @@
 		<div class="contactX">
 			<div class="side_menu"><ul>
 				<li><a href="gallery2.html">GALLERY</a></li>
-				<li>ABOUT</li>
-				<li><a href="contact.html">CONTACT</a></li>
-				<li>OFFERT</li>
+				<li><a href="contact.php">CONTACT</a></li>
+				<li><a href="offert.html">OFFERT</a></li>
 			</ul></div>
 			
 			<div class="self_img">
 				<img src="img/ludek.png">
+				<p>tel.693 092 787</p>
 			</div>
 			<div class="opis">
 				<h1>O mnie</h1>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugit ipsam, corrupti modi eaque doloribus. Quibusdam molestias perferendis veritatis neque corporis amet ducimus excepturi, ex ab placeat illum quia quae provident magni necessitatibus commodi. Sunt, aspernatur neque commodi necessitatibus aperiam eaque minima, architecto magni nostrum vitae, ab labore. Aspernatur suscipit blanditiis, mollitia, commodi voluptatibus optio laborum officia molestiae quas saepe dolorem pariatur, explicabo provident facilis vel deleniti sequi ab inventore vero aut dolorum deserunt dicta, sunt autem ipsa! Facere placeat dolores maxime repudiandae minus non incidunt pariatur qui velit aliquid, quos tempore facilis in, quas accusamus quod labore. Accusamus, harum.
 			</div>
 
-			<form class="contact_form" action="">
+			<form class="contact_form" action="" method="POST">
 				<h1>KONTAKT</h1>
 				Imie:<br/>
 				<input type="text" name="imie"><br/>
@@ -39,12 +39,26 @@
 				<input type="text" name="temat"><br/>
 				Treść:<br/>
 				<textarea name="wiadomosc" cols="52" rows="5"></textarea>
-				<button style="margin-top: 3%; height: 30px;" class="fa" type="submit">&#xf0e0; Wyślij</button>
+				<input name="submit" type="submit" value='Wyślij'>
 			</form>
+			<?php
+
+				if($_POST["submit"]){
+					
+					$msg = "Wiadomość od:".$_POST['imie']."  ".$_POST["email"]."  ". $_POST['wiadomosc'];
+					$to = "mikozdeb@gmail.com";
+					$subject = "ZE STRONY:". $_POST['temat'];
+					$headers = 'From: olov21r@dspo.ugu.pl';
+
+					mail($to, $subject, $msg, $headers);
+
+				}
+			?>
 
 
-
+		
 		</div>
+		
 	</div>
 </body>
 </html>

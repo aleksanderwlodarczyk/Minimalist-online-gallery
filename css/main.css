@@ -7,18 +7,25 @@ html{
 	margin:0;
 	padding:0;
 	font-size: 16px;
+	top:-100px;
+	position: absolute;
+}
+#div-gpt-ad-1412619226977-0{
+	display: none;
 }
 body{
-	background-color: black;
+	background-color: white;
 	margin:0;
 	padding:0;
 	font-family: 'Oswald', sans-serif;
 	overflow-x: hidden;
-	color: white;
+	color: #333;
+	margin-right: auto;
+	margin-left: auto;
 }
 .container{
 	width:100%;
-	height: 100%;
+	height: auto;
 	margin:0;
 	display: flex;
 	flex-wrap: wrap;
@@ -42,6 +49,7 @@ body{
 .window{
 	width: 100%;
 	height: 100%;
+	left: 0%;
 	position: absolute;
 	background-size: 100%;
 }
@@ -105,7 +113,7 @@ header{
 	border-bottom: 4px solid #aaa;
 }
 .logo{
-	color:white;
+	color:#333;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -121,19 +129,19 @@ header{
 }
 a{
 	text-decoration: none;
-	color:white;
+	color:#333;
 }
 a:link{
 	text-decoration: none;
-	color:white;
+	color:#333;
 }
 a:visited{
 	text-decoration: none;
-	color:white;
+	color:#333;
 }
 a:active{
 	text-decoration: none;
-	color:white;
+	color:#333;
 }
 
 .image{
@@ -143,7 +151,7 @@ a:active{
 
 }
 .menu_link{
-	color: white;
+	color: #333;
 	font-size: 1.8rem;
 	margin-right: 10px;
 }
@@ -165,7 +173,7 @@ a:active{
 	height: auto;
 }
 .side_menu{
-	color:white;
+	color:#333;
 	position: absolute;
 	display: block;
 	right: -300px;
@@ -187,6 +195,7 @@ a:active{
 	width: 100%;
 	height: 100%;
 	display: flex;
+	flex-grow: 1;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 }
@@ -204,12 +213,14 @@ a:active{
 	
 }
 footer{
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
-	padding-top: 5%;
-	position: absolute;
-	bottom: 0;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    top:2%;
+    margin-top: 0.5em;
+    color: black;
+	text-align: center;
 }
 
 .msg_img{
@@ -230,6 +241,12 @@ footer{
 	margin-left: 2%;
 	margin-top: 5%;
 }
+.self_img p{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 9%;
+}
 .self_img img{
 	width: 100%;
 	height: auto;
@@ -243,5 +260,29 @@ footer{
 }
 .opis h1{
 	margin-bottom: 3%;
-
+}
+.offert{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.offert table{
+	text-align: center;
+	//border:1px black solid;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.7rem;
+	margin-top: 5%; 
+}
+.offert table td{
+	padding-bottom: 7%;
+}
+.offert h1{
+	font-size: 2.5rem;
+}
+.offert p{
+	font-size: 1.2rem;
+}
+.fa{
+	padding:5%;
 }

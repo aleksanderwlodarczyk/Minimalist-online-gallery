@@ -8,7 +8,7 @@ $(document).ready(function(){
 		//$(this).width($(this).width()+10);
 		//$(this).height($(this).height()+5);
 		//$(this).css("border-radius", "15%");
-		$(this).css("box-shadow", "0 0 0 5px rgba(255,255,255, 0.6)");
+		$(this).css("box-shadow", "0 0 0 5px rgba(0,0,0, 0.6)");
 
 	});
 
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		//$(this).width($(this).width()-10);
 		//$(this).height($(this).height()-5);
 		//$(this).css("border-radius", "0%");
-		$(this).css("box-shadow", "0px 0px 0px rgba(255,255,255, 0.4)");
+		$(this).css("box-shadow", "0px 0px 0px rgba(0,0,0, 0.4)");
 	});
 
 	$(".gitem").on("click", function(){
