@@ -21,13 +21,10 @@
 			</ul></div>
 			
 			<div class="self_img">
-				<img src="img/ludek.png">
+				<img src="img/kmc.png">
 				<p>tel.693 092 787</p>
 			</div>
-			<div class="opis">
-				<h1>O mnie</h1>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta fugit ipsam, corrupti modi eaque doloribus. Quibusdam molestias perferendis veritatis neque corporis amet ducimus excepturi, ex ab placeat illum quia quae provident magni necessitatibus commodi. Sunt, aspernatur neque commodi necessitatibus aperiam eaque minima, architecto magni nostrum vitae, ab labore. Aspernatur suscipit blanditiis, mollitia, commodi voluptatibus optio laborum officia molestiae quas saepe dolorem pariatur, explicabo provident facilis vel deleniti sequi ab inventore vero aut dolorum deserunt dicta, sunt autem ipsa! Facere placeat dolores maxime repudiandae minus non incidunt pariatur qui velit aliquid, quos tempore facilis in, quas accusamus quod labore. Accusamus, harum.
-			</div>
+			
 
 			<form class="contact_form" action="" method="POST">
 				<h1>KONTAKT</h1>
@@ -39,7 +36,7 @@
 				<input type="text" name="temat"><br/>
 				Treść:<br/>
 				<textarea name="wiadomosc" cols="52" rows="5"></textarea>
-				<input name="submit" type="submit" value='Wyślij'>
+				<input id="submit" name="submit" type="submit" value='Wyślij'>
 			</form>
 			<?php
 
@@ -55,7 +52,7 @@
 				}
 			?>
 
-
+			
 		
 		</div>
 		
